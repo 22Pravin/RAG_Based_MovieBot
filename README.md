@@ -1,8 +1,3 @@
-Here is a comprehensive `.README.md` file for your **RAG-based MovieBot** project, based on the analysis of all the uploaded files:
-
----
-
-```markdown
 # 🎬 MovieBot — A RAG-Based Conversational Movie Assistant
 
 MovieBot is a Retrieval-Augmented Generation (RAG) based chatbot that allows users to ask natural language questions about movies and receive insightful, data-driven answers. It uses a combination of vector similarity search (via FAISS), semantic embeddings (via Sentence Transformers), and prompt-engineered LLM completions (via OpenAI) to deliver responses grounded in movie metadata and reviews.
@@ -15,28 +10,6 @@ MovieBot is a Retrieval-Augmented Generation (RAG) based chatbot that allows use
 - 🤖 **LLM Augmentation**: Leverages OpenAI's GPT models for natural language generation.
 - 🗣️ **Chat Interface**: Simple command-line interaction via `app.py`.
 - 🧠 **Modular Architecture**: Decoupled components for data loading, embedding, retrieval, and LLM interaction.
-
----
-
-## 📂 Project Structure
-
-```
-
-.
-├── app.py                    # CLI interface to talk to the bot
-├── movie\_bot.py              # Orchestrator for embedding + LLM interaction
-├── rag\_pipeline.py           # Core RAG logic
-├── vector\_store.py           # FAISS index creation and storage
-├── data\_preparation.py       # Load and process movie documents
-├── prompt\_templates.py       # Prompt formatting for LLM
-├── test.py                   # Basic unit tests
-├── movie\_documents.json      # Raw movie data
-├── processed\_movies.csv      # Preprocessed metadata
-├── movies\_faiss\_index        # FAISS index binary
-├── index\_to\_doc\_mapping.json# Index → Movie mapping
-└── README.md                 # You are here
-
-````
 
 ---
 
